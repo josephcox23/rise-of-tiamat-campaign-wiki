@@ -1,6 +1,3 @@
-# Ignore root level files, but allow directory traversal
-/*
-!/**/
 
 # Standard system ignores
 .DS_Store
