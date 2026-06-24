@@ -24,4 +24,9 @@ node_modules/
 !/quartz.config.ts
 !/quartz.layout.ts
 !/.gitignore
+
+# Whitelist the player folders and absolutely everything nested inside them
+!/_player/
+!/_player/**
 !/z_player/
+!/z_player/**
