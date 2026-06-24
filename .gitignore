@@ -1,23 +1,32 @@
-# 1. Ignore absolutely everything at the root level by default
+# Ignore root level files, but allow directory traversal
 /*
+!/**/
 
-# 2. Whitelist ONLY the core files Quartz needs to compile on Vercel
+# Standard system ignores
+.DS_Store
+.obsidian/
+.quartz-cache/
+node_modules/
+
+# Lock down all other personal folders explicitly so they never sync
+/00_Miscellaneous/
+/01_Acts and Sections/
+/02_NPCs and Factions/
+/03_Locations/
+/04_Items/
+/05_Mechanics/
+/06_Bestiary/
+/Players Handbook/
+/z_Images/
+/z_Templates/
+
+# Keep the framework essentials unlocked
 !/quartz/
-!/quartz/**
-!/.github/
-!/.github/**
 !/package.json
 !/tsconfig.json
 !/quartz.config.ts
 !/quartz.layout.ts
 !/.gitignore
 
-# 3. Whitelist ONLY the _player folder and everything inside it
+# Whitelist ONLY the player folder and its contents
 !/_player/
-!/_player/**
-
-# 4. Standard system ignores
-.DS_Store
-.obsidian/
-.quartz-cache/
-node_modules/
