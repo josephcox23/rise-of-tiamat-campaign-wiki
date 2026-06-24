@@ -25,5 +25,3 @@ node_modules/
 !/quartz.layout.ts
 !/.gitignore
 
-# Whitelist ONLY the player folder and its contents
-!/_player/
