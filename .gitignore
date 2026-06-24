@@ -11,11 +11,13 @@ private/
 replit.nix
 .quartz/
 quartz/cli/tui/dist/
-# Ignore absolutely everything in the vault by default
-/*
 
-# But do NOT ignore the _player folder
-!/_player/
+# Ignore standard framework directories, but do NOT ignore everything by default
+node_modules/
+public/
+.quartz-cache/
+.obsidian/
 
-# Make sure Git doesn't lock itself out of tracking files inside _player
-!/_player/**
+# Explicitly ensure the campaign wiki files are wide open for tracking
+!_player/
+!_player/**
