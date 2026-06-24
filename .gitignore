@@ -11,3 +11,11 @@ private/
 replit.nix
 .quartz/
 quartz/cli/tui/dist/
+# Ignore absolutely everything in the vault by default
+/*
+
+# But do NOT ignore the _player folder
+!/_player/
+
+# Make sure Git doesn't lock itself out of tracking files inside _player
+!/_player/**
