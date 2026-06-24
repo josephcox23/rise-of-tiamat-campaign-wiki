@@ -1,23 +1,23 @@
+# 1. Ignore absolutely everything at the root level by default
+/*
+
+# 2. Whitelist ONLY the core files Quartz needs to compile on Vercel
+!/quartz/
+!/quartz/**
+!/.github/
+!/.github/**
+!/package.json
+!/tsconfig.json
+!/quartz.config.ts
+!/quartz.layout.ts
+!/.gitignore
+
+# 3. Whitelist ONLY the _player folder and everything inside it
+!/_player/
+!/_player/**
+
+# 4. Standard system ignores
 .DS_Store
-.gitignore
-node_modules
-public
-prof
-tsconfig.tsbuildinfo
-.obsidian
-.quartz-cache
-private/
-.replit
-replit.nix
-.quartz/
-quartz/cli/tui/dist/
-
-# Ignore standard framework directories, but do NOT ignore everything by default
-node_modules/
-public/
-.quartz-cache/
 .obsidian/
-
-# Explicitly ensure the campaign wiki files are wide open for tracking
-!_player/
-!_player/**
+.quartz-cache/
+node_modules/
