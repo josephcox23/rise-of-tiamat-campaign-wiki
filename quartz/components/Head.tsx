@@ -1,12 +1,9 @@
-import { i18n } from "../util/lang"
-import { FullSlug, joinSegments, pathToRoot } from "../util/path"
+import { pathToRoot, joinSegments } from "../util/path"
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 
-const Head: QuartzComponent = ({ cfg, fileData, manifest }: QuartzComponentProps) => {
-  const title = fileData.frontmatter?.title ?? i18n(cfg.locale).propertyDefaults.title
-  const description =
-    fileData.frontmatter?.description ?? i18n(cfg.locale).propertyDefaults.description
-  const view = fileData.frontmatter?.view ?? "default"
+const Head: QuartzComponent = ({ cfg, fileData }: QuartzComponentProps) => {
+  const title = fileData.frontmatter?.title ?? "Campaign Wiki"
+  const description = fileData.frontmatter?.description ?? "Campaign Notes"
 
   const baseDir = pathToRoot(fileData.slug!)
   const iconPath = joinSegments(baseDir, "static/icon.png")
@@ -23,8 +20,6 @@ const Head: QuartzComponent = ({ cfg, fileData, manifest }: QuartzComponentProps
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={ogImagePath} />
-      <meta property="og:width" content="1200" />
-      <meta property="og:height" content="675" />
       <meta name="twitter:card" content="summary_large_image" />
     </head>
   )
