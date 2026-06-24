@@ -24,4 +24,4 @@ node_modules/
 !/quartz.config.ts
 !/quartz.layout.ts
 !/.gitignore
-
+!/_player/
