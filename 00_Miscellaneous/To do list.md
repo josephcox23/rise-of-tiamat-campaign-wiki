@@ -1,0 +1,14 @@
+- [ ] NPCs 
+    - [ ] Flesh out Lords Alliance 
+- [ ] Locations
+    - [ ] create shops in Waterdeep
+- [ ] Revise legendary items
+- [x] Read and revise a1s3/4
+- [ ] Maps of locations
+    - [ ] battle maps for arcane overlay
+- [x] Home brew mechanics
+- [ ] Create stat blocks for encounters
+    - [ ] recurring enemies
+    - [ ] Unique bosses
+- [x] Create item cards for faction boons
+- [ ] 
