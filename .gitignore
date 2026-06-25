@@ -1,30 +1,14 @@
-
-# Standard system ignores
-.DS_Store
-.obsidian/
-.quartz-cache/
+# Dependency directories
 node_modules/
+.pnpm-store/
 
-# Lock down all other personal folders explicitly so they never sync
-/00_Miscellaneous/
-/01_Acts and Sections/
-/02_NPCs and Factions/
-/03_Locations/
-/04_Items/
-/05_Mechanics/
-/06_Bestiary/
-/Players Handbook/
-/z_Images/
-/z_Templates/
+# Build outputs
+.quartz-cache/
+public/
+docs/
 
-# Keep the framework essentials unlocked
-!/quartz/
-!/package.json
-!/tsconfig.json
-!/quartz.config.ts
-!/quartz.layout.ts
-!/.gitignore
+# System files
+.DS_Store
 
-# Whitelist the player folders and absolutely everything nested inside them
-!/content
-!/content/**
+# Keep your local Obsidian preferences private
+.obsidian/
