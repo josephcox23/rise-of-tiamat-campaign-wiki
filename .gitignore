@@ -26,7 +26,5 @@ node_modules/
 !/.gitignore
 
 # Whitelist the player folders and absolutely everything nested inside them
-!/_player/
-!/_player/**
-!/z_player/
-!/z_player/**
+!/content
+!/content/**
